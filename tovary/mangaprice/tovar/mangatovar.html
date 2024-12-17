@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mangaTovarHeader.css">
+    <link rel="stylesheet" href="./css/mangaTovarContent.css">
+    <link rel="stylesheet" href="./css/mangaTovarFooter.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="../../index.html"><img src="img/whitelog.png" class="logoimg"></a></div>
+            <div class="block"><a href="mangaprice.html">Манга</a></div>
+            <div class="block"><a href="../comicsaprice/comicsaprice.html">Комиксы</a></div>
+            <div class="block"><a href="#">Фигурки</a></div>
+            <div class="block"><a href="#">О нас</a></div>
+
+            <div class="blockForm">
+                <form>
+                    <input type="text" placeholder="Искать здесь...">
+                    <button type="submit"></button>
+                </form>
+            </div>
+
+            <div id="openModalRegist" class="modal">
+                <div class="formawebReg">
+                    <a href="#close" title="Close" class="close">×</a>
+                    <h2 class="zaregVhod">Зарегистрироваться</h2>
+                    <label for="">Имя:</label><input type="name" class="inputModal">
+                    <label for="">Фамилия:</label><input type="name" class="inputModal">
+                    <label for="">Логин:</label><input type="name" class="inputModal">
+                    <label for="">Пароль:</label><input type="password" class="inputModal">
+                    <label for="">Повторить<br> пароль:</label><input type="password" class="inputModal">
+                    <label for="">E-mail:</label><input type="email" class="inputModal">
+                    <button class="initialisation">Зарегистрироваться</button>
+                </div>
+            </div>
+
+            <div id="openModalVhod" class="modal">
+                <div class="formawebVhod">
+                    <a href="#close" title="Close" class="close">×</a>
+                    <h2 class="zaregVhod">Войти</h2>
+                    <label for="">Логин или<br> E-mail:</label><input type="name" class="inputModal">
+                    <label for="">Пароль:</label><input type="password" class="inputModal">
+                    <button class="initialisation">Войти</button>
+                </div>
+            </div>
+
+            <div class="blockMod1"><a href="#openModalRegist" class="urlModal1">Регистрация</a></div>
+            <div class="blockMod2"><a href="#openModalVhod" class="urlModal">Войти</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="filtr">
+
+            
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="logoFooter"><a href="../../index.html"><img src="img/whitelog.png" class="logoimgFooter"></a>
+            </div>
+            <div class="blockFooter">
+                <p>ООО "КрипиФан", ИНН: XXXXXXXXX <br>
+                    e-mail: creepe_info@XXXXXX</p>
+            </div>
+            <div class="blockFooter"><a href="">Обратная связь</a></div>
+            <div class="blockFooter"><a href="">Что-то</a></div>
+            <div class="blockFooter"><a href="">Что-то</a></div>
+            <div class="blockFooter"><a href="">Что-то</a></div>
+        </div>
+    </footer>
+    <script src="js/mangaprice.js"></script>
+</body>
+
+</html>
