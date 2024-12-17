@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modalContent{
+            font-family: sans-serif;
+            border-radius: 20px;
+            background-color: #0f0f0f;
+            margin: 15% auto;
+            padding: 20px;
+            border: 4px inset rgb(69, 255, 162);
+            width: 400px;
+            color: white;        
+        }
+        .modalForm{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        .closeModal{
+            color: #ffffff;
+            cursor: pointer;
+            /* opacity: .75; */
+            float: right;
+            font-size: 28px;
+        }
+        .close:focus,
+        .close:hover {
+            color: #fff7f7;
+            cursor: pointer;
+            opacity: .75;
+        }       
+        .initialisation {
+            margin: auto;
+            padding: auto;
+            width: 95%;
+            height: 50px;
+            background-color: #0f0f0f;
+            cursor: pointer;
+            color: white;
+            grid-column-start: span 2;
+            border: 4px inset rgb(112, 146, 98);
+            border-radius: 20px;
+        }
+        .initialisation:hover {
+            background: rgb(0, 173, 136);
+            font-size: large;
+        }
+        .inputModal {
+            float: right;
+            padding-left: 20px;
+            border-radius: 25px;
+            height: 50px;
+            width: 290px;
+        }
+        label{
+            padding-top: 15px;
+        }
+        /* .Inputs{
+            padding: 15px;
+        } */
+        /* .zaregVhod {
+            margin: auto;
+        } */
+
+    </style>
+</head>
+<body>
+
+
+    <!-- анимация при прокручивании, картинки на индексе плавновоявляются (с помошью прозрачноести) -->
+
+    <div id="myModal" class="modal">
+        <div class="modalContent">
+            <span class="closeModal">&times</span>
+            <h2 class="zaregVhod">Зарегистрироваться</h2><br>
+            <div class="Inputs">
+                <label for="">Имя:</label><input type="name" class="inputModal">
+            </div>
+
+            <div class="Inputs"> 
+                <label for="">Фамилия:</label><input type="name" class="inputModal">
+            </div>
+
+            <div class="Inputs">
+                <label for="">Логин:</label><input type="name" class="inputModal">
+            </div>
+
+            <div class="Inputs">
+                <label for="">Пароль:</label><input type="password" class="inputModal">
+            </div>
+
+            <div class="Inputs">
+                <label for="">Повторить<br> пароль:</label><input type="password" class="inputModal">
+            </div>
+
+            <div class="Inputs">
+                <label for="">E-mail:</label><input type="email" class="inputModal">
+            </div>
+            <button class="initialisation">Зарегистрироваться</button>
+        </div>
+    </div>
+    <button id="myBtn">Регистрация</button>
+    <button>Войти</button>
+    <script src="js/ModalWindow.js"></script>
+</body>
+</html>
