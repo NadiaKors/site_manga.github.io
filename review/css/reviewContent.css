@@ -1,0 +1,96 @@
+main {
+    font-family: garamond;
+    color: rgb(219, 217, 217);
+    background-image: url(../img/fon2.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.content {
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+ 
+}
+/* .text{
+    width: 60%;
+    min-height: 75%;
+    background-color: #070707;
+    margin: auto;
+} */
+
+/* БЛОК СЛАЙДЕР1 */
+/* блок с мангой */
+.review{
+    height: 500px;  
+    width: 900px;
+    border-radius: 30px;
+    margin: auto;
+    padding: 55px;
+    background: linear-gradient(rgb(143, 143, 143), rgba(0, 0, 0, 0.5));
+    /* position: relative; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.review a{
+    text-decoration: none;
+    color: white;
+}
+.review a:hover{
+    color: #7c7c7c;
+}
+
+/* кнопки вперед-назад */
+.prev, .next{
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 46px;
+    height: 46px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+    border: 0px solid rgb(61, 61, 61);
+    z-index: 9999;
+}
+.prev{
+    left: 23%;
+    border-radius: 3px 0 0 3px;
+}
+.next{
+    right: 23%;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgb(247, 246, 246);
+    color: rgb(7, 7, 7);
+    opacity: 0.5;
+}
+
+
+.divSlider{
+    width: auto;
+    height: auto;
+    display: none;
+}
+.divSlider.active{
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.peopleReview{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
